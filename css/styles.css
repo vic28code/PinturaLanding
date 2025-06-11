@@ -30,6 +30,13 @@ Colors:
 /*     General Styles     */
 /**************************/
 
+figcaption a {
+    color: blue;
+    /* o cualquier color visible */
+    text-decoration: underline;
+    pointer-events: auto;
+}
+
 body,
 p {
     color: #6b747b;
@@ -598,7 +605,7 @@ input[type="checkbox"] {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 1rem;
     padding-bottom: 1.5rem;
     text-align: center;
 }
@@ -1092,6 +1099,7 @@ a:hover.back-to-top {
 
     /* Galeria */
 
+
     /* Contenedor de las tarjetas en fila */
 
 
@@ -1408,6 +1416,6 @@ a:hover.back-to-top {
         margin-top: 0.5rem;
     }
 
- 
-    
+
+
 }

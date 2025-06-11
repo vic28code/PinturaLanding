@@ -1311,6 +1311,103 @@ a:hover.back-to-top {
     }
 
     /* end of extra pages */
-}
+    /* end of min-width 1200px */
+    .gif {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
 
-/* end of min-width 1200px */
+    }
+
+    @media(min-width: 768px) {
+        .custom-form-container {
+            width: 50%;
+            /* md:w-1/2 */
+            margin-top: 0;
+            /* md:mt-0 */
+        }
+    }
+
+
+    #encarga-tu-cuadro {
+        max-width: 80rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    /* Contenedor flex para formulario e imagen */
+    #encarga-tu-cuadro>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (min-width: 768px) {
+        #encarga-tu-cuadro>div {
+            flex-direction: row;
+            gap: 2.5rem;
+            ;
+        }
+
+        /* Mitad izquierda */
+        #encarga-tu-cuadro form {
+            width: 100%;
+        }
+
+    }
+
+    #counter {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        max-width: 80rem;
+        padding: 0 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Grid en pantallas medianas hacia arriba: 3 columnas */
+    #counter .counter-grid {
+        display: grid;
+        gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+        #counter .counter-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    /* Estilos para cada celda */
+    #counter .cell {
+        text-align: center;
+    }
+
+    /* Número grande y color */
+    #counter .counter-value {
+        font-size: 2.25rem;
+        /* text-4xl */
+        font-weight: 700;
+        color: #4f46e5;
+        /* Indigo-600 */
+    }
+
+    /* Descripción */
+    #counter .counter-info {
+        font-size: 1.125rem;
+        /* text-lg */
+        color: #374151;
+        /* Gray-700 */
+        margin-top: 0.5rem;
+    }
+
+ 
+    
+}

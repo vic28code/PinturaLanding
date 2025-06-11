@@ -192,7 +192,7 @@
 	const counters = {
 		entregados: 0,
 		enProceso: 0,
-		enEspera: 1,
+		enEspera: 0,
 	};
 	document.addEventListener('DOMContentLoaded', () => {
 		// Cargar contadores o inicializar en 0

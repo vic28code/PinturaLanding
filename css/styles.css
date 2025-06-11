@@ -123,7 +123,8 @@ h6 {
 .btn-solid-reg:hover {
     border: 1px solid #594cda;
     background-color: transparent;
-    color: #594cda; /* needs to stay here because of the color property of a tag */
+    color: #594cda;
+    /* needs to stay here because of the color property of a tag */
     text-decoration: none;
 }
 
@@ -147,7 +148,8 @@ h6 {
 .btn-solid-lg:hover {
     border: 1px solid #594cda;
     background-color: transparent;
-    color: #594cda; /* needs to stay here because of the color property of a tag */
+    color: #594cda;
+    /* needs to stay here because of the color property of a tag */
     text-decoration: none;
 }
 
@@ -170,7 +172,8 @@ h6 {
 .btn-solid-lg.secondary:hover {
     border: 1px solid #eb427e;
     background: transparent;
-    color: #eb427e; /* needs to stay here because of the color property of a tag */
+    color: #eb427e;
+    /* needs to stay here because of the color property of a tag */
 }
 
 .btn-outline-reg {
@@ -261,10 +264,10 @@ h6 {
     transition: all 0.2s ease;
 }
 
-.form-control-input:focus + .label-control,
-.form-control-input.notEmpty + .label-control,
-.form-control-textarea:focus + .label-control,
-.form-control-textarea.notEmpty + .label-control {
+.form-control-input:focus+.label-control,
+.form-control-input.notEmpty+.label-control,
+.form-control-textarea:focus+.label-control,
+.form-control-textarea.notEmpty+.label-control {
     top: 0.125rem;
     color: #6b747b;
     opacity: 1;
@@ -274,7 +277,8 @@ h6 {
 
 .form-control-input,
 .form-control-select {
-    display: block; /* needed for proper display of the label in Firefox, IE, Edge */
+    display: block;
+    /* needed for proper display of the label in Firefox, IE, Edge */
     width: 100%;
     padding-top: 1.125rem;
     padding-bottom: 0.125rem;
@@ -286,7 +290,9 @@ h6 {
     font-size: 0.875rem;
     line-height: 1.875rem;
     transition: all 0.2s;
-    -webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+    -webkit-appearance: none;
+    appearance: none;
+    /* removes inner shadow on form inputs on ios safari */
 }
 
 .form-control-select {
@@ -310,9 +316,11 @@ select {
 }
 
 .form-control-textarea {
-    display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
+    display: block;
+    /* used to eliminate a bottom gap difference between Chrome and IE/FF */
     width: 100%;
-    height: 14rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
+    height: 14rem;
+    /* used instead of html rows to normalize height between Chrome and IE/FF */
     padding-top: 1.5rem;
     padding-left: 1.3125rem;
     border: 1px solid #d0d5e2;
@@ -328,7 +336,8 @@ select {
 .form-control-select:focus,
 .form-control-textarea:focus {
     border: 1px solid #a1a1a1;
-    outline: none; /* Removes blue border on focus */
+    outline: none;
+    /* Removes blue border on focus */
 }
 
 .form-control-input:hover,
@@ -404,10 +413,12 @@ input[type="checkbox"] {
 .my-mfp-slide-bottom.mfp-ready.mfp-bg {
     opacity: 0.8;
 }
+
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {
     opacity: 0;
 }
+
 /* end of fade-move animation for details lightbox - magnific popup */
 
 /**********************/
@@ -449,7 +460,8 @@ input[type="checkbox"] {
 
 .offcanvas-collapse {
     position: fixed;
-    top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
+    top: 3.25rem;
+    /* adjusts the height between the top of the page and the offcanvas menu */
     bottom: 0;
     left: 100%;
     width: 100%;
@@ -498,7 +510,7 @@ input[type="checkbox"] {
     margin-left: 0;
 }
 
-.dropdown.show > a,
+.dropdown.show>a,
 .nav-link:hover,
 .nav-link.active {
     color: #ff6e84;
@@ -519,7 +531,8 @@ input[type="checkbox"] {
     background-color: #f1f9fc;
     background-clip: padding-box;
     border-radius: 0.25rem;
-    animation: fadeDropdown 0.2s; /* required for the fade animation */
+    animation: fadeDropdown 0.2s;
+    /* required for the fade animation */
 }
 
 @keyframes fadeDropdown {
@@ -567,6 +580,7 @@ input[type="checkbox"] {
     margin: 0.5rem auto 0.5rem auto;
     background-color: #d4dce2;
 }
+
 /* end of dropdown menu */
 
 /*****************/
@@ -580,6 +594,10 @@ input[type="checkbox"] {
 /*     Features     */
 /********************/
 .cards-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
     padding-top: 4rem;
     padding-bottom: 1.5rem;
     text-align: center;
@@ -638,6 +656,7 @@ input[type="checkbox"] {
 .lightbox-basic .btn-solid-reg.mfp-close:hover {
     color: #594cda;
 }
+
 /* end of action Button */
 
 /* Back Button */
@@ -659,6 +678,7 @@ input[type="checkbox"] {
     background-color: #252c38;
     color: #ffffff;
 }
+
 /* end of back button */
 
 /* Close X Button */
@@ -670,6 +690,7 @@ input[type="checkbox"] {
     height: 44px;
     color: #555555;
 }
+
 /* end of close x button */
 
 /**********************/
@@ -857,6 +878,7 @@ input[type="checkbox"] {
     -ms-transform: rotate(45deg) translate3d(0, 0, 0);
     transform: rotate(45deg) translate3d(0, 0, 0);
 }
+
 /* end of best value label */
 
 /**********************/
@@ -984,12 +1006,15 @@ a:hover.back-to-top {
 
 /* Min-width 768px */
 @media (min-width: 768px) {
+
     /* Extra Pages */
     .ex-basic-1 .text-box {
         padding: 1.75rem 2rem 0.875rem 2rem;
     }
+
     /* end of extra pages */
 }
+
 /* end of min-width 768px */
 
 /* Min-width 1024px */
@@ -1062,25 +1087,84 @@ a:hover.back-to-top {
     .lightbox-basic {
         padding: 3rem 3rem;
     }
+
     /* end of details lightbox */
 
-    /* Features */
-    .cards-1 .card {
-        display: inline-block;
-        width: 306px;
-        vertical-align: top;
+    /* Galeria */
+
+    /* Contenedor de las tarjetas en fila */
+
+
+    /* Container para cada tarjeta */
+    .card-img {
+        width: 300px;
+        height: 400px;
+        perspective: 1000px;
+        margin-bottom: 30px;
     }
 
-    .cards-1 .card:nth-of-type(3n + 2) {
-        margin-right: 1rem;
-        margin-left: 1rem;
+
+    /* Card inner container that handles the flip */
+    .card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+        /* Velocidad del giro */
     }
+
+    /* Flipping the card on hover */
+    .card-img:hover .card-inner {
+        transform: rotateY(180deg);
+    }
+
+    /* Front of the card (image) */
+    .card-front {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        /* Oculta la parte posterior cuando está volteada */
+    }
+
+    .card-front img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Asegura que la imagen ocupe todo el espacio */
+    }
+
+    /* Back of the card (description) */
+    .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #f1f9fc;
+        color: #252c38;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        /* Gira la parte posterior */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 1rem;
+        color: #252c38;
+    }
+
     /* end of features */
 
     /* Statistics */
     .counter {
         padding-top: 5rem;
     }
+
     /* end of statistics */
 
     /* Testimonials */
@@ -1099,6 +1183,7 @@ a:hover.back-to-top {
         width: 22px;
         background-size: 22px 34px;
     }
+
     /* end of testimonials */
 
     /* Pricing */
@@ -1113,12 +1198,14 @@ a:hover.back-to-top {
         margin-right: 0.375rem;
         margin-left: 0.375rem;
     }
+
     /* end of pricing */
 
     /* Conclusion */
     .basic-5 {
         text-align: left;
     }
+
     /* end of conclusion */
 
     /* Copyright */
@@ -1134,6 +1221,7 @@ a:hover.back-to-top {
     .copyright .statement {
         text-align: right;
     }
+
     /* end of copyright */
 
     /* Extra Pages */
@@ -1147,12 +1235,15 @@ a:hover.back-to-top {
         margin-right: 1rem;
         margin-left: 1rem;
     }
+
     /* end of extra pages */
 }
+
 /* end of min-width 1024px */
 
 /* Min-width 1280px */
 @media (min-width: 1280px) {
+
     /* General Styles */
     .h1-large {
         font-size: 3.125rem;
@@ -1162,6 +1253,7 @@ a:hover.back-to-top {
     .container {
         max-width: 72rem;
     }
+
     /* end of general styles */
 
     /* Features */
@@ -1175,6 +1267,7 @@ a:hover.back-to-top {
         margin-right: 1.5rem;
         margin-left: 1.5rem;
     }
+
     /* end of features */
 
     /* Statistics */
@@ -1187,6 +1280,7 @@ a:hover.back-to-top {
         font-size: 3.75rem;
         line-height: 4.25rem;
     }
+
     /* end of statistics */
 
     /* Pricing */
@@ -1203,6 +1297,7 @@ a:hover.back-to-top {
         padding-right: 2.25rem;
         padding-left: 2.25rem;
     }
+
     /* end of pricing */
 
     /* Extra Pages */
@@ -1214,6 +1309,8 @@ a:hover.back-to-top {
         margin-right: 2.875rem;
         margin-left: 2.875rem;
     }
+
     /* end of extra pages */
 }
+
 /* end of min-width 1200px */
